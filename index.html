@@ -3,22 +3,73 @@
 <meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0 user-scalable=no" />
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Roboto:100,200,300,400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 <link type="text/css" rel="stylesheet" href="css/style.css">
 <title>Shane Dempsey</title>
 </head>
+<style>
+
+</style>
 <body>
 
-<div class="container">
-<div class="large entry center">
-Shane Dempsey.
-</div>
-<hr>
-<p>Currently employed by EMC and working on software defined networking solutions.</p>
-</div> <!-- end container -->
-<div class="footer">
-<div class="cell center"><a href="https://github.com/iagainst138"><i class="fa fa-github"></i> GitHub</a></div>
-<div class="cell center"><a href="http://ie.linkedin.com/pub/shane-dempsey/27/616/666"<i class="fa fa-linkedin-square"></i> LinkedIn</a></div>
-</div>
+<div id="info" class="info">
+<div class="header"><div class="cell">Shane Dempsey</div></div>
+<div class="icons">
+<span class="cell"><a href="http://ie.linkedin.com/pub/shane-dempsey/27/616/666"><i class="fa fa-linkedin-square"></i><span> LinkedIn</span></a></span>
+<span class="cell"><a href="https://github.com/iagainst138"><i class="fa fa-github"></i><span> GitHub</span></a></span>
+</div> <!-- end icons -->
+</div> <!-- end info -->
+
+<div class="main">
+
+<h2>Employment</h2>
+<p>Currently working for EMC.</p>
+
+<h2>Education & Certifications</h2>
+<p>Msc. Software Development, Cork Institute of Technology.</p>
+Certifications:
+<ul>
+<li>Red Hat Certified System Administrator</li>
+<li>Oracle Certified Professional, Java SE 6 Programmer</li>
+<li>Cisco CCNA</li>
+</ul>
+
+</div> <!-- end main-->
+
+<div class="footnote">
+2015
+</div> <!-- end footnote -->
+
+
+<script>
+function scroller() {
+    return function () {
+        if ( window.innerWidth <= 900 ) {
+            if ( window.pageYOffset > 0 ) {
+                document.getElementById('info').style.boxShadow='0px 1px 5px #888888';
+            }
+            else {
+                document.getElementById('info').style.boxShadow='none';
+            }
+        }
+    }
+}
+
+function resizer() {
+    return function () {
+        if ( window.innerWidth > 900 ) {
+            document.getElementById('info').style.boxShadow='none';
+        }
+        scroller()();
+    }
+}
+
+var scroll_handler = scroller();
+var resize_handler = resizer();
+window.addEventListener('scroll', scroll_handler);
+window.addEventListener('resize', resize_handler);
+</script>
 
 </body>
 </html>
+
