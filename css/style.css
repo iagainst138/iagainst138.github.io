@@ -79,6 +79,11 @@ pre, code {
     padding-bottom: 5px;
     border-bottom: 1px solid lightgray;
     text-transform: capitalize;
+    margin-top: 60px;
+}
+
+.main h2:nth-child(1) {
+    margin-top: 20px;
 }
 
 .footnote {
@@ -133,10 +138,6 @@ pre, code {
         width: 30%;
     }
 
-    .info {
-        border-top: 2px solid #555;
-    }
-
     .main {
         width: 70%;
         margin-left: 30%;
@@ -160,6 +161,11 @@ pre, code {
     .main {
         position: static; 
         margin-top: 60px;
+    }
+
+    .main h1, .main h2, .main h3 {
+        border-bottom: none;
+        margin-bottom: 0px;
     }
 
     .info {
