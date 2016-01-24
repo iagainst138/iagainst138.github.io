@@ -5,11 +5,9 @@ html, body {
 }
 
 body {
-    /*font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-    font-family: 'Lato', sans-serif;
-    /*color: #444;*/
-    color: #555;
-    border-top: 2px solid #555;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444;
+    border-top: 2px solid #444;
     line-height: 24px;
 }
 
@@ -29,10 +27,10 @@ a:visited {
 }
 a:hover { 
     text-decoration: none; 
-    color: firebrick;
+    color: #C0392B;
 } 
 a:active { 
-    color: firebrick;
+    color: #C0392B;
     font-weight: 300;
 }
 
@@ -53,7 +51,11 @@ pre, code {
     height: 100%;
     float: left;
     position: fixed;
+    color: inherit;
+    background: inherit;
     border-right: 1px solid lightgray;
+    transition: background-color 0.8s ease;
+    transition: color 0.6s ease;
 }
 
 .main {
@@ -121,7 +123,7 @@ pre, code {
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    border-left: 4px solid firebrick;
+    border-left: 4px solid #C0392B;
     font-style: italic;
     font-weight: 200;
 }
@@ -163,11 +165,11 @@ pre, code {
     }
 
     .info {
-        color: #555;
-        border-top: 2px solid #555;
+        color: inherit;
+        background: inherit;
+        border-top: 2px solid #444;
         display:table;
         position: fixed;
-        background: white;
         top: 0px;
         height: 40px;
         border-right: none;
@@ -176,7 +178,6 @@ pre, code {
 
     .main {
         height: auto;
-        //overflow-y: hidden;
         margin-left: 0%;
         margin-bottom: 0px;
     }

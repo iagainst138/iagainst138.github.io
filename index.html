@@ -3,7 +3,6 @@
 <meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0 user-scalable=no" />
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Roboto:100,200,300,400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 <link type="text/css" rel="stylesheet" href="css/style.css">
 <title>Shane Dempsey</title>
 </head>
@@ -23,7 +22,7 @@
 <div class="main">
 
 <h2>Employment</h2>
-<p>Currently working for EMC.</p>
+<p>Currently working as a senior software engineer for EMC.</p>
 
 <h2>Education & Certifications</h2>
 <p>Msc. Software Development, Cork Institute of Technology.</p>
@@ -37,7 +36,7 @@ Certifications:
 </div> <!-- end main-->
 
 <div class="footnote">
-2015
+2016
 </div> <!-- end footnote -->
 
 
@@ -47,9 +46,15 @@ function scroller() {
         if ( window.innerWidth <= 900 ) {
             if ( window.pageYOffset > 0 ) {
                 document.getElementById('info').style.boxShadow='0px 1px 5px #888888';
+                document.getElementById('info').style.color='white';
+                document.getElementById('info').style.background='#444';
+                document.getElementById('info').style.borderBottom='1px solid #444';
             }
             else {
                 document.getElementById('info').style.boxShadow='none';
+                document.getElementById('info').style.color='#444';
+                document.getElementById('info').style.background='white';
+                document.getElementById('info').style.borderBottom='1px solid lightgray';
             }
         }
     }
@@ -59,6 +64,9 @@ function resizer() {
     return function () {
         if ( window.innerWidth > 900 ) {
             document.getElementById('info').style.boxShadow='none';
+            document.getElementById('info').style.color='#444';
+            document.getElementById('info').style.background='white';
+            document.getElementById('info').style.borderBottom='1px solid lightgray';
         }
         scroller()();
     }
