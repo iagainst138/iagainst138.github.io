@@ -6,6 +6,7 @@ html, body {
 
 body {
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 120%;
     color: #444;
     border-top: 2px solid #444;
     line-height: 24px;
@@ -17,19 +18,19 @@ div {
     box-sizing: border-box;
 }
 
-a:link { 
-    text-decoration: none; 
-    color: inherit;
-}
-a:visited { 
+a:link {
     text-decoration: none;
     color: inherit;
 }
-a:hover { 
-    text-decoration: none; 
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
     color: #C0392B;
-} 
-a:active { 
+}
+a:active {
     color: #C0392B;
     font-weight: 300;
 }
@@ -55,7 +56,7 @@ pre, code {
     background: inherit;
     border-right: 1px solid lightgray;
     transition: background-color 0.8s ease;
-    transition: color 0.6s ease;
+    transition: color 0.8s ease;
 }
 
 .main {
@@ -154,7 +155,7 @@ pre, code {
     }
 
     .main {
-        position: static; 
+        position: static;
         margin-top: 60px;
         min-height: 90%;
     }
@@ -184,7 +185,7 @@ pre, code {
 
     .footnote {
         width: 100%;
-        position: static; 
+        position: static;
     }
 
     .header {
@@ -199,7 +200,7 @@ pre, code {
         height: 100%;
         text-align: right;
     }
-    
+
     .info .header {
         display:table-cell;
         vertical-align: middle;
@@ -208,13 +209,13 @@ pre, code {
         width: 80%;
         text-align: left;
     }
-    
+
     .info .cell {
         display: table-cell;
         height: 100%;
         margin: 0;
     }
-    
+
     .info .header .cell {
         width: 80%;
         text-align: left;
